@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+
+<h1>Create a New Post para la Banda</h1>
+
+<form action="/create-post/" method="post">
+    <label for="src">SRC </label>
+    <input id="src" type="text" name="src" value="{{ current_name }}">
+    <label for="program">Program </label>
+    <input id="program" type="text" name="program" value="{{ current_name }}">
+    <label for="title">Title </label>
+    <input id="title" type="text" name="title" value="{{ current_name }}">
+    <label for="description">Description </label>
+    <input id="description" type="text" name="description" value="{{ current_name }}">
+    <label for="system">System </label>
+    <input id="system" type="text" name="system" value="{{ current_name }}">
+    
+    <input type="submit" value="Publicar">
+</form>
+{% endblock %}
